@@ -12,7 +12,7 @@ function submitForm(e) {
 
   $.ajax({
 
-    url: "https://script.google.com/macros/s/AKfycbwlsgY_9Xex3ipd8O45Phs2lqM1TC-McVb_FfYc6Uzngmdb-B3UR5y-APywc0jUQemR/exec",
+    url: "https://script.google.com/macros/s/AKfycbwSAf3_1gXwxm8h4KLAkVz50Ae2vrxKXpEiRY_8IrWdEVnsGjAHmjomOSnrFcwu9wKp/exec",
     data: $("#saleForm01").serialize(),
     method: "post",
     success: function(response) {
@@ -26,7 +26,7 @@ function submitForm(e) {
       $('#saleForm01')[0].reset();
       $("#form-results").css("display", "block");
 
-      $("#form-results").text("Successfully Submitted. Our team will contact you back.");
+      $("#form-results").text("Successfully Submitted.");
       setTimeout(function() {
         $("#form-results").text("");
       }, 3000);
